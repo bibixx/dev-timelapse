@@ -14,11 +14,11 @@ $ npm install dev-timelapse -g
 
 ## Usage
 ```
-dev-timelapse http://localhost:3000
+$ dev-timelapse http://localhost:3000
 ```
 or using `npx`
 ```
-npx dev-timelapse http://localhost:3000
+$ npx dev-timelapse http://localhost:3000
 ```
 
 ## Options
