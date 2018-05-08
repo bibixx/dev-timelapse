@@ -1,6 +1,6 @@
 {
   "name": "dev-timelapse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "With this tool you can create timelapse of creation of your project",
   "engines": {
     "node": ">=7.6"
