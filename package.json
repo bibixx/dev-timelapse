@@ -1,0 +1,40 @@
+{
+  "name": "dev-timelapse",
+  "version": "1.0.0",
+  "description": "With this tool you can create timelapse of creation of your project",
+  "engines": {
+    "node": ">=7.6"
+  },
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "author": {
+    "name": "Bartosz Legięć",
+    "email": "bartosz@legiec.eu",
+    "url": "https://legiec.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bibixx/dev-timelapse"
+  },
+  "bin": {
+    "snippet": "./src/index.js"
+  },
+  "keywords": [
+    "timelapse",
+    "tlapse",
+    "screenshot"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "capture-chrome": "^2.0.0",
+    "chalk": "^2.4.1",
+    "looks-same": "^3.3.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-config-airbnb-base": "^12.1.0"
+  }
+}
