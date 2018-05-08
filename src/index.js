@@ -29,7 +29,13 @@ const yargs = require("yargs")
   .option("height", {
     alias: "h",
     describe: "screenshot height",
-    default: 1024,
+    default: 768,
+    type: "number",
+  })
+  .option("size", {
+    alias: "s",
+    describe: "size of a screenshot",
+    default: "1024x768",
     type: "number",
   })
   .help()
@@ -69,9 +75,11 @@ const looksSamePromise = (...args) => new Promise((resolve, reject) => {
   });
 });
 
+const [width, height] = argv.size.toLowerCase().split("x");
+
 const imageUrlPath = argv._[0] || "http://localhost:8080";
-const imageWidth = argv.width;
-const imageHeight = argv.height;
+const imageWidth = argv.width || width;
+const imageHeight = argv.height || height;
 const imageSavePath = argv.path;
 const imageInteval = getTimeFromString(argv.every);
 
