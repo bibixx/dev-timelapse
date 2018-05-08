@@ -1,4 +1,7 @@
 # Dev timelapse
+[![npm](https://img.shields.io/npm/dt/dev-timelapse.svg)
+![npm](https://img.shields.io/npm/v/dev-timelapse.svg)](https://www.npmjs.com/package/dev-timelapse)
+
 This tool enables you to create timelapse of creation of your project.
 It takes screenshots throughout your development.
 
