@@ -80,8 +80,8 @@ console.log(argv.size);
 const [width, height] = argv.size.toLowerCase().split("x");
 
 const imageUrlPath = argv._[0] || "http://localhost:8080";
-const imageWidth = argv.width || width;
-const imageHeight = argv.height || height;
+const imageWidth = width;
+const imageHeight = height;
 const imageSavePath = argv.path;
 const imageInteval = getTimeFromString(argv.every);
 
