@@ -1,12 +1,14 @@
 {
   "name": "dev-timelapse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "With this tool you can create timelapse of creation of your project",
   "engines": {
     "node": ">=7.6"
   },
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
   "author": {
     "name": "Bartosz Legięć",
     "email": "bartosz@legiec.eu",

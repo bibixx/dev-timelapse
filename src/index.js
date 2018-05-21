@@ -36,7 +36,7 @@ const yargs = require("yargs")
     alias: "s",
     describe: "size of a screenshot",
     default: "1024x768",
-    type: "number",
+    type: "string",
   })
   .help()
   .version();
@@ -74,6 +74,8 @@ const looksSamePromise = (...args) => new Promise((resolve, reject) => {
     error ? reject(error) : resolve(equal);
   });
 });
+
+console.log(argv.size);
 
 const [width, height] = argv.size.toLowerCase().split("x");
 
