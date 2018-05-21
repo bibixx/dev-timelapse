@@ -83,7 +83,7 @@ const imageHeight = argv.height || height;
 const imageSavePath = argv.path;
 const imageInteval = getTimeFromString(argv.every);
 
-const savePath = path.join(__dirname, imageSavePath);
+const savePath = path.join(process.cwd(), imageSavePath);
 let lastSavePath = "";
 
 const getSS = async () => {
