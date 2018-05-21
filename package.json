@@ -1,6 +1,6 @@
 {
   "name": "dev-timelapse",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "With this tool you can create timelapse of creation of your project",
   "engines": {
     "node": ">=7.6"
@@ -18,9 +18,7 @@
     "type": "git",
     "url": "https://github.com/bibixx/dev-timelapse"
   },
-  "bin": {
-    "snippet": "./src/index.js"
-  },
+  "bin": "./src/index.js",
   "keywords": [
     "timelapse",
     "tlapse",
