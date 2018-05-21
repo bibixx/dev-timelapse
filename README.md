@@ -29,3 +29,7 @@ $ npx dev-timelapse http://localhost:3000
 | --size   | -s     | Size of a screenshot         |
 | --width  | -w     | Width of a screenshot        |
 | --height | -h     | Height of a screenshot       |
+| --pr     | -r     | pixel ratio of the screen    |
+
+## Note
+If screenshots don't match specified size assure that pixel ratio is set according to your screen

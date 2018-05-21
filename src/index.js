@@ -38,6 +38,12 @@ const yargs = require("yargs")
     default: "1024x768",
     type: "string",
   })
+  .option("pr", {
+    alias: "r",
+    describe: "pixel ratio of the screen",
+    default: 1,
+    type: "number",
+  })
   .help()
   .version();
 
@@ -75,10 +81,9 @@ const looksSamePromise = (...args) => new Promise((resolve, reject) => {
   });
 });
 
-console.log(argv.size);
-
 const [width, height] = argv.size.toLowerCase().split("x");
 
+const pixelRatio = argv.pr;
 const imageUrlPath = argv._[0] || "http://localhost:8080";
 const imageWidth = width;
 const imageHeight = height;
@@ -93,8 +98,8 @@ const getSS = async () => {
 
   const imgBuffer = await capture({
     url: imageUrlPath,
-    width: imageWidth,
-    height: imageHeight,
+    width: +imageWidth / pixelRatio,
+    height: +imageHeight / pixelRatio,
   });
 
   if (!fs.existsSync(savePath)) {
