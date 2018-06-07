@@ -5,7 +5,7 @@
 This tool enables you to create timelapse of creation of your project.
 It takes screenshots throughout your development.
 
-I can't hide that It was highly inspired by [tlapse](https://github.com/typicode/tlapse), so I have to give [@typicode](https://github.com/typicode) credit for the idea however my version is based soley on [chrome in headless mode](https://github.com/juliangruber/capture-chrome) and not on PhantomJS (Thanks to that, rendering engine is from newest version of chrome).
+I can't hide that It was highly inspired by [tlapse](https://github.com/typicode/tlapse), so I have to give [@typicode](https://github.com/typicode) credit for the idea however my version is based soley on [chrome in headless mode](https://github.com/juliangruber/capture-chrome) and not on PhantomJS (Thanks to that, rendering engine is from the newest version of chrome).
 
 ## Installation
 ```
