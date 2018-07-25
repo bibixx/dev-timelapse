@@ -16,7 +16,7 @@ module.exports = {
     "quotes": ["error", "double"],
     "no-console": 0,
     "prefer-template": "warn",
-    "eol-last": 0,
+    "eol-last": ["error", "always"],
     "quote-props": ["error", "as-needed"],
     "indent": ["error", 2, {
       "SwitchCase": 1,

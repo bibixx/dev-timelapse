@@ -7,7 +7,9 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "lint": "eslint src/*",
+    "test:version": "node test/test-version.js"
   },
   "author": {
     "name": "Bartosz Legięć",
